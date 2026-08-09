@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs"
+  },
+  "dependencies": {
+    "vitepress": "1.6.4",
+    "@sugarat/theme": "0.5.27"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

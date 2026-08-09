@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "docs/public/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "posts"
+    label: "博客文章"
+    folder: "docs/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "标签", name: "tags", widget: "list"}
+      - {label: "正文", name: "body", widget: "markdown"}
